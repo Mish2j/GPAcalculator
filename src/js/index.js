@@ -119,15 +119,31 @@
       courses.forEach((course) => this.addToResultTable(course));
     }
 
-    static displayModal() {
+    static displayModal(title, messages = []) {
       const warnModal = document.querySelector(".warning-modal");
+      const modalTextBox = warnModal.querySelector(".modal-text");
       const overlay = document.querySelector(".overlay");
       const btnCloseModal = document.querySelector(".btn-close-modal");
+
+      const headingEl = document.createElement("h3");
+      const headingText = document.createTextNode(title);
+      headingEl.appendChild(headingText);
+
+      title && modalTextBox.insertAdjacentElement("afterbegin", headingEl);
+
+      messages.forEach((msg) => {
+        const msgEl = document.createElement("p");
+        const msgText = document.createTextNode(msg);
+        msgEl.appendChild(msgText);
+        modalTextBox.insertAdjacentElement("beforeend", msgEl);
+      });
 
       warnModal.classList.toggle("hidden");
       overlay.classList.toggle("hidden");
 
       const hideModal = function () {
+        modalTextBox.innerHTML = "";
+
         warnModal.classList.add("hidden");
         overlay.classList.add("hidden");
       };
@@ -222,14 +238,32 @@
   DOM.form.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    const course = document.querySelector(".class").value;
-    const unit = document.querySelector(".unit").value;
-    const grade = document.querySelector(".grade").value;
+    const course = document.querySelector(".class").value.trim();
+    const unit = document.querySelector(".unit").value.trim();
+    const grade = document.querySelector(".grade").value.trim();
 
     const randomId = Date.now();
+    let modalTitle = "Please fill in all fields carefully!";
+    let modalMsg = [];
 
-    if (!course || !unit || !grade) {
-      UI.displayModal();
+    if (!course) {
+      modalMsg.push("Please add your course name!");
+    }
+
+    if (!unit) {
+      modalMsg.push("Please add your course units!");
+    } else if (typeof +unit !== "number" || +unit <= 0) {
+      modalMsg.push(
+        "Only numeric characters (greater than 0) are allowed in the 'Units' field."
+      );
+    }
+
+    if (!grade) {
+      modalMsg.push("Please add your letter grade!");
+    }
+
+    if (modalMsg.length > 0) {
+      UI.displayModal(modalTitle, modalMsg);
       return;
     }
 

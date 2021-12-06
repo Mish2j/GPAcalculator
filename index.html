@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
-    <!-- <link rel="stylesheet" href="./css/style.css" type="text/css" /> -->
+    <!-- <link rel="stylesheet" href="./src/css/style.css" type="text/css" /> -->
     <link rel="stylesheet" href="./lib/style.prefix.min.css" type="text/css" />
   </head>
   <body>
@@ -294,13 +294,7 @@
         <div class="overlay hidden"></div>
         <div class="warning-modal hidden">
           <i class="fas fa-times btn-close-modal"></i>
-          <div class="modal-text">
-            <p>Please Fill in All Fields</p>
-            <p>1. Add Your Subject</p>
-            <p>2. Add Your Course Units</p>
-            <p>3. Add Your Letter Grade</p>
-            <p>4. Click Add Course</p>
-          </div>
+          <div class="modal-text"></div>
         </div>
         <div class="page-heading">
           <h3>Welcome!</h3>
@@ -318,11 +312,11 @@
             </div>
 
             <div class="row row-second">
-              <input type="text" class="class input" placeholder="Class" />
+              <input type="text" class="class input" placeholder="Course" />
               <input
                 type="number"
                 class="unit input"
-                placeholder="Unit"
+                placeholder="Units"
                 min="1"
               />
               <select required class="grade input">
@@ -357,8 +351,8 @@
           <table class="table" cellspacing="0" cellpadding="0">
             <thead class="table-header">
               <tr class="border-radius">
-                <th>Class</th>
-                <th>Unit</th>
+                <th>Course</th>
+                <th>Units</th>
                 <th>Grade</th>
                 <th></th>
               </tr>
