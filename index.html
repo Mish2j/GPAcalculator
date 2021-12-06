@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>GPA calculator</title>
+    <meta name="description" content="Simple GPA calculator" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+      integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="./css/style.css" type="text/css" /> -->
+    <link rel="stylesheet" href="./lib/style.prefix.min.css" type="text/css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="logo-svg">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="69.599"
+            height="50.448"
+            viewBox="0 0 69.599 50.448"
+          >
+            <g
+              id="Group_40"
+              data-name="Group 40"
+              transform="translate(-139 -44)"
+            >
+              <g
+                id="Group_39"
+                data-name="Group 39"
+                transform="translate(139 44)"
+              >
+                <path
+                  id="Path_54"
+                  data-name="Path 54"
+                  d="M345.878,584.643V596.8H315.41a6.084,6.084,0,1,1,0-12.161Z"
+                  transform="translate(-301.526 -546.823)"
+                  fill="#f2f2f2"
+                />
+                <path
+                  id="Path_55"
+                  class="theme-color"
+                  data-name="Path 55"
+                  d="M340.281,593.991a.468.468,0,0,1-.468.468H308.522a6.408,6.408,0,1,1,0-12.816h31.291a.468.468,0,1,1,0,.935H308.522a5.472,5.472,0,0,0,0,10.945h31.291A.468.468,0,0,1,340.281,593.991Z"
+                  transform="translate(-295.181 -544.104)"
+                  fill="#08c1b9"
+                />
+                <path
+                  id="Path_56"
+                  data-name="Path 56"
+                  d="M383.949,612.83H351.208a.094.094,0,1,1,0-.187h32.741a.094.094,0,1,1,0,.187Z"
+                  transform="translate(-339.597 -572.204)"
+                  fill="#ccc"
+                />
+                <path
+                  id="Path_57"
+                  data-name="Path 57"
+                  d="M383.949,636.83H351.208a.094.094,0,1,1,0-.187h32.741a.094.094,0,1,1,0,.187Z"
+                  transform="translate(-339.597 -593.959)"
+                  fill="#ccc"
+                />
+                <path
+                  id="Path_58"
+                  data-name="Path 58"
+                  d="M383.949,660.83H351.208a.094.094,0,1,1,0-.187h32.741a.094.094,0,1,1,0,.187Z"
+                  transform="translate(-339.597 -615.714)"
+                  fill="#ccc"
+                />
+                <path
+                  id="Path_59"
+                  data-name="Path 59"
+                  d="M383.949,684.83H351.208a.094.094,0,1,1,0-.187h32.741a.094.094,0,1,1,0,.187Z"
+                  transform="translate(-339.597 -637.469)"
+                  fill="#ccc"
+                />
+                <path
+                  id="Path_60"
+                  data-name="Path 60"
+                  d="M626.806,410.036l-7.63,9.47-23.725-19.116a6.084,6.084,0,1,1,7.63-9.47Z"
+                  transform="translate(-558.906 -369.927)"
+                  fill="#f2f2f2"
+                />
+                <path
+                  id="Path_61"
+                  data-name="Path 61"
+                  d="M613.512,414.585a.468.468,0,0,1-.658.071l-24.366-19.633a6.408,6.408,0,0,1,8.041-9.979L620.9,404.676a.468.468,0,0,1-.587.728l-24.366-19.633a5.472,5.472,0,0,0-6.867,8.523l24.366,19.633A.468.468,0,0,1,613.512,414.585Z"
+                  transform="translate(-552.602 -364.61)"
+                  fill="#ccc"
+                />
+                <path
+                  id="Path_62"
+                  data-name="Path 62"
+                  d="M687.628,431.807l-25.5-20.543a.094.094,0,0,1,.117-.146l25.495,20.543a.094.094,0,1,1-.117.146Z"
+                  transform="translate(-621.49 -389.513)"
+                  fill="#ccc"
+                />
+                <path
+                  id="Path_63"
+                  data-name="Path 63"
+                  d="M672.57,450.5l-25.495-20.543a.093.093,0,1,1,.117-.146l25.495,20.543a.094.094,0,0,1-.117.146Z"
+                  transform="translate(-607.841 -406.453)"
+                  fill="#ccc"
+                />
+                <path
+                  id="Path_64"
+                  data-name="Path 64"
+                  d="M657.512,469.184l-25.495-20.543a.094.094,0,1,1,.117-.146l25.495,20.543a.094.094,0,0,1-.117.146Z"
+                  transform="translate(-594.191 -423.394)"
+                  fill="#ccc"
+                />
+                <path
+                  id="Path_65"
+                  data-name="Path 65"
+                  d="M642.454,487.872,616.959,467.33a.094.094,0,0,1,.117-.146l25.495,20.543a.094.094,0,1,1-.117.146Z"
+                  transform="translate(-580.542 -440.334)"
+                  fill="#ccc"
+                />
+                <path
+                  id="Path_66"
+                  data-name="Path 66"
+                  d="M297.505,717.83H228.094a.094.094,0,0,1,0-.187h69.411a.094.094,0,1,1,0,.187Z"
+                  transform="translate(-228 -667.382)"
+                  fill="#ccc"
+                />
+                <path
+                  id="Path_67"
+                  data-name="Path 67"
+                  d="M322.79,350.65h-1.069l-.509-4.125h1.578Z"
+                  transform="translate(-291.164 -314.109)"
+                  fill="#ffb8b8"
+                />
+                <path
+                  id="Path_68"
+                  data-name="Path 68"
+                  d="M305.9,387.355h2.062v1.3H304.6A1.3,1.3,0,0,1,305.9,387.355Z"
+                  transform="translate(-276.106 -351.119)"
+                  fill="#2f2e41"
+                />
+                <path
+                  id="Path_69"
+                  data-name="Path 69"
+                  d="M206,350.65h-1.069l-.509-4.125H206Z"
+                  transform="translate(-185.295 -314.109)"
+                  fill="#ffb8b8"
+                />
+                <path
+                  id="Path_70"
+                  data-name="Path 70"
+                  d="M189.1,387.355h2.062v1.3h-3.361A1.3,1.3,0,0,1,189.1,387.355Z"
+                  transform="translate(-170.237 -351.119)"
+                  fill="#2f2e41"
+                />
+                <path
+                  id="Path_71"
+                  data-name="Path 71"
+                  d="M487.471,210.125v-.468a3.017,3.017,0,0,1,3.017-3.017h0a3.017,3.017,0,0,1,3.017,3.017v.468a2.175,2.175,0,0,1-2.175,2.175h-1.684a2.175,2.175,0,0,1-2.175-2.175Z"
+                  transform="translate(-463.198 -204.181)"
+                  fill="#2f2e41"
+                />
+                <circle
+                  id="Ellipse_18"
+                  data-name="Ellipse 18"
+                  cx="2.298"
+                  cy="2.298"
+                  r="2.298"
+                  transform="translate(24.992 3.684)"
+                  fill="#ffb8b8"
+                />
+                <path
+                  id="Path_72"
+                  data-name="Path 72"
+                  d="M634.488,376.475"
+                  transform="translate(-596.462 -358.129)"
+                  fill="#ffb8b8"
+                />
+                <path
+                  id="Path_73"
+                  data-name="Path 73"
+                  d="M383.406,326.393a.877.877,0,0,1,1.336.157l1.97-.373.518,1.142-2.789.487a.882.882,0,0,1-1.035-1.413Z"
+                  transform="translate(-368.614 -312.515)"
+                  fill="#ffb8b8"
+                />
+                <path
+                  id="Path_74"
+                  data-name="Path 74"
+                  d="M414.51,283.213l.026.039-3.23,2.128-5.45,1.74a.328.328,0,0,0-.226.35l.119,1.024a.327.327,0,0,0,.394.282l5.129-1.1a1.853,1.853,0,0,0,.69-.3l3.628-2.582a.933.933,0,0,0-1.055-1.539Z"
+                  transform="translate(-389.012 -273.487)"
+                  fill="#ccc"
+                />
+                <path
+                  id="Path_75"
+                  data-name="Path 75"
+                  d="M440.87,366.287a.423.423,0,0,1-.387-.253l-4.9-12.114a.14.14,0,0,0-.263.015l-4,11.794a.421.421,0,0,1-.55.27l-1.341-.5a.42.42,0,0,1-.271-.347c-.6-5.257,4.659-18.525,4.712-18.658l.015-.037,4.8,1.061.01.011c1.914,2.088,3.487,15.256,3.783,17.874a.419.419,0,0,1-.278.444l-1.184.419A.416.416,0,0,1,440.87,366.287Z"
+                  transform="translate(-410.294 -330.916)"
+                  fill="#2f2e41"
+                />
+                <path
+                  id="Path_76"
+                  data-name="Path 76"
+                  d="M481.771,282.122c-1.162,0-2.458-.232-2.857-1.188l-.009-.022.012-.02c.315-.517.731-1.4.507-1.563a1.8,1.8,0,0,1-.635-1.593,3.837,3.837,0,0,1,2.691-3.506h0a11.942,11.942,0,0,1,1.334-.344,2.29,2.29,0,0,1,2.734,2.23,8.989,8.989,0,0,1-1.582,5.68.416.416,0,0,1-.246.143A11.434,11.434,0,0,1,481.771,282.122Z"
+                  transform="translate(-455.328 -265.096)"
+                  fill="#ccc"
+                />
+                <path
+                  id="Path_77"
+                  data-name="Path 77"
+                  d="M505.726,342.941a.894.894,0,0,1,1.092-.623.868.868,0,0,1,.135.05l1.5-1.361,1.04.7-2.139,1.893a.892.892,0,0,1-1.012.429.879.879,0,0,1-.613-1.088Z"
+                  transform="translate(-479.715 -325.979)"
+                  fill="#ffb8b8"
+                />
+                <path
+                  id="Path_78"
+                  data-name="Path 78"
+                  d="M522.84,290.681a.42.42,0,0,1-.266-.095l-.59-.482a.421.421,0,0,1,.01-.66l2.474-1.9a.141.141,0,0,0,.026-.2l-1.527-2.018a1.243,1.243,0,0,1,.083-1.6h0a1.239,1.239,0,0,1,1.673-.134l.01.01,1.594,2.283a1.421,1.421,0,0,1-.034,2.262l-3.2,2.445A.422.422,0,0,1,522.84,290.681Z"
+                  transform="translate(-494.343 -273.701)"
+                  fill="#ccc"
+                />
+                <path
+                  id="Path_79"
+                  data-name="Path 79"
+                  d="M497.965,217.733v-1.14L500,215.7l1.941.889v1.14a.187.187,0,0,1-.187.187h-3.6A.187.187,0,0,1,497.965,217.733Z"
+                  transform="translate(-472.711 -212.397)"
+                  fill="#2f2e41"
+                />
+                <path
+                  id="Path_80"
+                  data-name="Path 80"
+                  d="M517.993,182.967a2.1,2.1,0,0,1,1.258-2.435,2.9,2.9,0,0,1,2.825.512,4.765,4.765,0,0,1,1.528,2.534,14.2,14.2,0,0,1,.354,2.983,2,2,0,1,1-1.921.712,2.467,2.467,0,0,0-2.871-3.827C518.6,183.682,517.9,183.071,517.993,182.967Z"
+                  transform="translate(-490.797 -180.357)"
+                  fill="#2f2e41"
+                />
+                <path
+                  id="Path_81"
+                  class="theme-color"
+                  data-name="Path 81"
+                  d="M340.824,232.222a9.771,9.771,0,0,1-3.962-.868.418.418,0,0,1-.248-.384v-3.407a.421.421,0,0,1,.421-.421h7.577a.421.421,0,0,1,.421.421v3.407a.418.418,0,0,1-.248.384h0A9.771,9.771,0,0,1,340.824,232.222Z"
+                  transform="translate(-326.454 -222.766)"
+                  fill="#08c1b9"
+                />
+                <path
+                  id="Path_82"
+                  class="theme-color"
+                  data-name="Path 82"
+                  d="M319.3,197.127a.421.421,0,0,1-.164-.033l-6.009-2.535a.421.421,0,0,1,.014-.781l6.009-2.28a.419.419,0,0,1,.3,0l5.928,2.28a.421.421,0,0,1,.014.78l-5.928,2.535A.421.421,0,0,1,319.3,197.127Z"
+                  transform="translate(-304.932 -190.431)"
+                  fill="#08c1b9"
+                />
+                <circle
+                  id="Ellipse_19"
+                  data-name="Ellipse 19"
+                  cx="0.561"
+                  cy="0.561"
+                  r="0.561"
+                  transform="translate(10.301 7.698)"
+                  fill="#3f3d56"
+                />
+                <path
+                  id="Path_83"
+                  data-name="Path 83"
+                  d="M326.244,219.114l-5.928,2.535a.374.374,0,0,1-.293,0l-6.009-2.535a.367.367,0,0,1-.179-.157.374.374,0,0,0,.179.531l6.009,2.535a.374.374,0,0,0,.293,0l5.928-2.535a.374.374,0,0,0,.177-.531A.367.367,0,0,1,326.244,219.114Z"
+                  transform="translate(-305.761 -215.347)"
+                  opacity="0.2"
+                />
+                <path
+                  id="Path_84"
+                  data-name="Path 84"
+                  d="M343.712,224.678a.094.094,0,0,0,.094-.094v-3.13l3.085-1.124a.094.094,0,0,0,0-.187l-3.085,1.124a.183.183,0,0,0-.134.054.186.186,0,0,0-.056.133v3.13A.093.093,0,0,0,343.712,224.678Z"
+                  transform="translate(-332.802 -216.421)"
+                  fill="#3f3d56"
+                />
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="theme-color-switch">
+          <label class="switch">
+            <input type="checkbox" class="checkBox" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </header>
+      <main class="main wrapper">
+        <div class="overlay hidden"></div>
+        <div class="warning-modal hidden">
+          <i class="fas fa-times btn-close-modal"></i>
+          <div class="modal-text">
+            <p>Please Fill in All Fields</p>
+            <p>1. Add Your Subject</p>
+            <p>2. Add Your Course Units</p>
+            <p>3. Add Your Letter Grade</p>
+            <p>4. Click Add Course</p>
+          </div>
+        </div>
+        <div class="page-heading">
+          <h3>Welcome!</h3>
+          <h1>This page was created to help you calculate your GPA</h1>
+        </div>
+        <form class="gpa-form" novalidate>
+          <div class="form-container">
+            <div class="row row-first">
+              <button type="submit" class="btn btn-add-course">
+                Add Course
+              </button>
+              <p class="class-count-p">
+                Course: <span class="class-count"></span>
+              </p>
+            </div>
+
+            <div class="row row-second">
+              <input type="text" class="class input" placeholder="Class" />
+              <input
+                type="number"
+                class="unit input"
+                placeholder="Unit"
+                min="1"
+              />
+              <select required class="grade input">
+                <option value="" disabled selected hidden>Grade</option>
+
+                <option value="A">A</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B">B</option>
+                <option value="B-">B-</option>
+                <option value="C+">C+</option>
+                <option value="C">C</option>
+                <option value="C-">C-</option>
+                <option value="D+">D+</option>
+                <option value="D">D</option>
+                <option value="F">F</option>
+              </select>
+            </div>
+          </div>
+        </form>
+        <div class="table-container hidden">
+          <div class="row row-first">
+            <div class="gpa-result-box">
+              <p class="gpa-result">Your GPA: <span class="gpa"></span></p>
+            </div>
+
+            <button class="btn btn-reset">
+              Reset <i class="fas fa-redo"></i>
+            </button>
+          </div>
+
+          <table class="table" cellspacing="0" cellpadding="0">
+            <thead class="table-header">
+              <tr class="border-radius">
+                <th>Class</th>
+                <th>Unit</th>
+                <th>Grade</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody class="table-body"></tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer-content">
+          <p class="footer-p2">
+            Made with love by <span class="colored">Mishel Ghukasyan</span>
+          </p>
+          <div class="social-icon-box">
+            <a target="_blank" href="https://github.com/Mish2j"
+              ><i class="fab fa-github-square"></i
+            ></a>
+            <a target="_blank" href="https://www.linkedin.com/"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./lib/index.js"></script>
+    <!-- <script src="./src/js/index.js"></script> -->
+  </body>
+</html>
