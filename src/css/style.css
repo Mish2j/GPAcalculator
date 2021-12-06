@@ -56,15 +56,9 @@ html {
   }
 }
 
-@media only screen and (max-width: 75em) {
-  html {
-    font-size: 56.25%; /*1rem = 9px */
-  }
-}
-
 @media only screen and (max-width: 56.25em) {
   html {
-    font-size: 50%; /*1rem = 8px*/
+    font-size: 56.25%; /*1rem = 9px */
   }
 }
 
@@ -94,6 +88,13 @@ a {
   padding-left: 1.5rem;
 }
 
+@media only screen and (max-width: 31.25em) {
+  .wrapper {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
 .warning-modal {
   position: fixed;
   top: 50%;
@@ -115,7 +116,7 @@ a {
   }
 }
 
-@media only screen and (max-width: 20em) {
+@media only screen and (max-width: 23.4375em) {
   .warning-modal {
     width: 75%;
     min-width: 0;
@@ -321,7 +322,7 @@ input:checked + .slider:before {
   }
 }
 
-@media only screen and (max-width: 20em) {
+@media only screen and (max-width: 23.4375em) {
   .form-container {
     width: 100%;
   }
@@ -367,6 +368,12 @@ input:checked + .slider:before {
   color: var(--text-color);
   padding: 1rem 2rem;
   font-size: 1.7rem;
+}
+
+@media only screen and (max-width: 31.25em) {
+  .input {
+    padding: 1.3rem 2.3rem;
+  }
 }
 
 .class {

@@ -252,9 +252,9 @@
 
     if (!unit) {
       modalMsg.push("Please add your course units!");
-    } else if (typeof +unit !== "number" || +unit <= 0) {
+    } else if (isNaN(+unit) || +unit <= 0) {
       modalMsg.push(
-        "Only numeric characters (greater than 0) are allowed in the 'Units' field."
+        "Only numeric characters ( >= 1) are allowed in the 'Units' field."
       );
     }
 
@@ -267,7 +267,8 @@
       return;
     }
 
-    const courseDataObj = new CourseData(course, unit, grade, randomId);
+    const formatUnit = Math.floor(unit);
+    const courseDataObj = new CourseData(course, formatUnit, grade, randomId);
 
     Store.addCourse(courseDataObj);
 
